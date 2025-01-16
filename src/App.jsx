@@ -3,8 +3,9 @@ import NavbarMain from "./Components/NavbarMain.jsx";
 
 const App = () => {
     return (
-        <body>
+        <body className="font-nephilm">
             <NavbarMain />
+            <Home />
         </body>
     )
 }
