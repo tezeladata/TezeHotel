@@ -12,17 +12,17 @@ const Home = () => {
     return (
         <header>
             {/* container */}
-            <section className="w-full h-full px-[15%] flex items-center justify-between py-20 max-[1000px]:px-[7.5%] max-[500px]:block max-[500px]:py-15">
+            <section className="spacer layer1 w-full h-[90vh] px-[15%] flex items-center justify-between max-[1000px]:px-[7.5%] max-[500px]:block">
                 {/* left */}
-                <div className="w-1/2 flex flex-col max-[500px]:items-center max-[500px]:w-full max-[500px]:pb-16">
-                    <h2 className="text-main-gold text-2xl max-[800px]:text-lg">TezeHotel</h2>
-                    <h1 className="text-7xl max-w-[75%] pt-10 pb-10 cursor-pointer max-[1500px]:text-5xl max-[1200px]:text-4xl max-[800px]:text-2xl max-[800px]:py-5 max-[500px]:text-center">
+                <div className="w-1/2 flex flex-col max-[500px]:items-center max-[500px]:w-full max-[500px]:pb-16 max-[500px]:py-[100px]">
+                    <h2 className="text-main-dark text-2xl max-[800px]:text-lg">TezeHotel</h2>
+                    <h1 className="text-second-dark font-groce text-7xl max-w-[75%] pt-10 pb-10 cursor-pointer max-[1500px]:text-5xl max-[1200px]:text-4xl max-[800px]:text-2xl max-[800px]:py-5 max-[500px]:text-center">
                         Welcome to the oasis of luxury & tranquility
                     </h1>
-                    <p className="text-main-gray pb-5 max-[800px]:text-sm max-[600px]:text-xs max-[500px]:text-center">
+                    <p className="text-second-gray max-w-[75%] pb-5 max-[800px]:text-sm max-[600px]:text-xs max-[500px]:text-center">
                         Welcome to TezeHotel, a sanctuary of elegance and opulence nestled in the heart of Batumi. Experience unparalleled luxury with our exquisitely designed suites, world-class dining, and personalized service.
                     </p>
-                    <span className="hover:font-bold text-main-light pt-3 pb-3 pl-6 pr-6 bg-main-gold w-max cursor-pointe max-[600px]:text-sm">
+                    <span className="shadow-[0px_0px_31px_10px_rgba(138,129,64,1)] rounded-xl hover:font-bold text-main-light pt-3 pb-3 pl-6 pr-6 bg-main-gold w-max cursor-pointe max-[600px]:text-sm">
                         Discover more
                     </span>
                 </div>
@@ -32,7 +32,7 @@ const Home = () => {
                     <Swiper
                         pagination={true}
                         modules={[Pagination]}
-                        className="swiper h-full"
+                        className="swiper h-full rounded-3xl shadow-[0px_0px_71px_27px_rgba(138,129,64,1)]"
                     >
                         <SwiperSlide>
                             <img src={image2} alt="Room main image" className="object-cover w-full h-full" />

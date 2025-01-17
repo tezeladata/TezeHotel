@@ -9,12 +9,14 @@ export default {
       colors: {
         "main-dark": "var(--text-dark)",
         "main-gold": "var(--text-gold)",
+        "second-gold": "var(--text-gold-second)",
         "main-gray": "var(--text-gray)",
         "second-gray": "var(--text-gray2)",
         "main-light": "var(--text-light)"
       },
       fontFamily: {
         nephilm: ['nephilm', 'sans-serif'],
+        groce: ['groce', 'sans-serif'],
       },
     },
   },

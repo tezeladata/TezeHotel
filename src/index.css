@@ -3,10 +3,15 @@
 @tailwind utilities;
 
 :root {
+    /*--text-dark: #191D21;*/
+    /*--text-gold: #8A8140;*/
+    /*--text-gray2: #31373F;*/
+    /*--text-light: #EDEEF0;*/
     --text-dark: #191D21;
-    --text-gold: #8A8140;
+    --text-gold: #d9b061;
+    --text-gold-second: #d9c4a9;
     --text-gray: #7A7A7A;
-    --text-gray2: #31373F;
+    --text-gray2: #8d6f57;
     --text-light: #EDEEF0;
 }
 
@@ -18,4 +23,28 @@
     font-display: swap;
     src: url("./assets/fonts/Nephilm.otf") format('otf');
   }
+
+  @font-face {
+    font-family: 'groce';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url("./assets/fonts/Groce.otf") format('otf');
+  }
+}
+
+.spacer {
+    aspect-ratio: 960/300;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.layer1 {
+    background-image: url("./assets/images/backgrounds/blob-scene-haikei.svg");
+}
+
+.layer2 {
+    background-image: url("./assets/images/backgrounds/blob-haikei.svg");
 }

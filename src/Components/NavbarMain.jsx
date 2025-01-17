@@ -3,12 +3,12 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPhone, faEnvelopeOpenText, faBars, faX } from '@fortawesome/free-solid-svg-icons';
 import { faFacebookF, faInstagram, faYoutube } from '@fortawesome/free-brands-svg-icons';
 import websiteLogo from "../assets/images/logo.png";
+import { Link } from 'react-router-dom';
 
 const NavbarMain = () => {
-    const [isOpen, setIsOpen] = useState(true); // Default to menu open
-    const [windowWidth, setWindowWidth] = useState(window.innerWidth); // Track window width
+    const [isOpen, setIsOpen] = useState(true);
+    const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
-    // Update the window width on resize
     useEffect(() => {
         const handleResize = () => setWindowWidth(window.innerWidth);
         window.addEventListener('resize', handleResize);
@@ -19,7 +19,7 @@ const NavbarMain = () => {
     }, []);
 
     const handleChange = () => {
-        setIsOpen(!isOpen); // Toggle menu state
+        setIsOpen(!isOpen);
     };
 
     return (
@@ -51,21 +51,36 @@ const NavbarMain = () => {
 
                 {/* Logo */}
                 <div className="flex items-center justify-start max-[900px]:justify-center">
-                    <img src={websiteLogo} alt="website logo" className="w-[50%] cursor-pointer max-[900px]:w-[40%] max-[500px]:pb-0" />
+                    <Link to="/">
+                        <img src={websiteLogo} alt="website logo" className="w-[50%] cursor-pointer max-[900px]:w-[40%] max-[500px]:pb-0"/>
+                    </Link>
                 </div>
 
                 {/* Menu Items */}
-                <div 
+                <div
                     className={`flex items-center justify-center text-center max-[500px]:grid-cols-2 max-[500px]:gap-4 
                         ${windowWidth <= 500 ? (isOpen ? 'grid' : 'hidden') : 'flex'}`}
                 >
-                    <span className="pl-6 cursor-pointer hover:font-bold max-[500px]:px-0">Home</span>
-                    <span className="pl-6 cursor-pointer hover:font-bold max-[500px]:px-0">About</span>
-                    <span className="pl-6 cursor-pointer hover:font-bold max-[500px]:px-0">Rooms</span>
-                    <span className="pl-6 cursor-pointer hover:font-bold max-[500px]:px-0">Food</span>
-                    <span className="pl-6 cursor-pointer hover:font-bold max-[500px]:px-0">Reviews</span>
-                    <span className="pl-6 cursor-pointer hover:font-bold max-[500px]:px-0">Analytics</span>
-                    <span className="text-main-light ml-6 pt-3 pb-3 pl-6 pr-6 bg-main-gold cursor-pointer hover:font-bold max-[500px]:w-max max-[500px]:[grid-area:4/1/5/3] max-[500px]:justify-self-center max-[500px]:mx-0">Book now</span>
+                    <Link to="/">
+                        <span className="ml-6 cursor-pointer max-[500px]:mx-0 relative group"> Home <span className="absolute -bottom-1 left-0 w-0 transition-all duration-300 h-0.5 bg-main-gold group-hover:w-full"></span></span>
+                    </Link>
+                    <Link to="/about">
+                        <span className="ml-6 cursor-pointer max-[500px]:mx-0 relative group">About <span className="absolute -bottom-1 left-0 w-0 transition-all duration-300 h-0.5 bg-main-gold group-hover:w-full"></span></span>
+                    </Link>
+                    <span className="ml-6 cursor-pointer max-[500px]:mx-0 relative group">
+                        Rooms <span
+                        className="absolute -bottom-1 left-0 w-0 transition-all duration-300 h-0.5 bg-main-gold group-hover:w-full"></span>
+                    </span>
+                    <span className="ml-6 cursor-pointer max-[500px]:mx-0 relative group">
+                        Food <span className="absolute -bottom-1 left-0 w-0 transition-all duration-300 h-0.5 bg-main-gold group-hover:w-full"></span>
+                    </span>
+                    <span className="ml-6 cursor-pointer max-[500px]:mx-0 relative group">
+                        Reviews <span className="absolute -bottom-1 left-0 w-0 transition-all duration-300 h-0.5 bg-main-gold group-hover:w-full"></span>
+                    </span>
+                    <span className="ml-6 cursor-pointer max-[500px]:mx-0 relative group">
+                        Analytics <span className="absolute -bottom-1 left-0 w-0 transition-all duration-300 h-0.5 bg-main-gold group-hover:w-full"></span>
+                    </span>
+                    <span className="shadow-[0px_0px_31px_10px_rgba(138,129,64,1)] rounded-xl text-main-light ml-6 pt-3 pb-3 pl-6 pr-6 bg-main-gold cursor-pointer hover:font-bold max-[500px]:w-max max-[500px]:[grid-area:4/1/5/3] max-[500px]:justify-self-center max-[500px]:mx-0">Book now</span>
                 </div>
             </div>
         </section>
