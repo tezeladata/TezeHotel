@@ -28,7 +28,7 @@ const Home = () => {
                 </div>
 
                 {/* right */}
-                <div className="flex w-[40%] h-[800px] max-[1500px]:h-[700px] max-[1200px]:h-[500px] max-[800px]:h-[400px] max-[500px]:items-center max-[500px]:w-[100%] max-[500px]:h-[400px]">
+                <div className="flex w-[40%] h-[600px] max-[1500px]:h-[700px] max-[1200px]:h-[500px] max-[800px]:h-[400px] max-[500px]:items-center max-[500px]:w-[100%] max-[500px]:h-[400px]">
                     <Swiper
                         pagination={true}
                         modules={[Pagination]}

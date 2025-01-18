@@ -67,10 +67,12 @@ const NavbarMain = () => {
                     <Link to="/about">
                         <span className="ml-6 cursor-pointer max-[500px]:mx-0 relative group">About <span className="absolute -bottom-1 left-0 w-0 transition-all duration-300 h-0.5 bg-main-gold group-hover:w-full"></span></span>
                     </Link>
-                    <span className="ml-6 cursor-pointer max-[500px]:mx-0 relative group">
-                        Rooms <span
-                        className="absolute -bottom-1 left-0 w-0 transition-all duration-300 h-0.5 bg-main-gold group-hover:w-full"></span>
-                    </span>
+                    <Link to="/rooms">
+                        <span className="ml-6 cursor-pointer max-[500px]:mx-0 relative group">
+                            Rooms <span
+                            className="absolute -bottom-1 left-0 w-0 transition-all duration-300 h-0.5 bg-main-gold group-hover:w-full"></span>
+                        </span>
+                    </Link>
                     <span className="ml-6 cursor-pointer max-[500px]:mx-0 relative group">
                         Food <span className="absolute -bottom-1 left-0 w-0 transition-all duration-300 h-0.5 bg-main-gold group-hover:w-full"></span>
                     </span>
