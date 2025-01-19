@@ -12,11 +12,11 @@ const Home = () => {
     return (
         <header>
             {/* container */}
-            <section className="spacer layer1 w-full h-[90vh] px-[15%] flex items-center justify-between max-[1000px]:px-[7.5%] max-[500px]:block max-[500px]:h-[100vh]">
+            <section className="spacer layer1 w-full h-[100vh] px-[15%] flex items-center justify-between max-[1000px]:px-[7.5%] max-[500px]:block max-[500px]:h-[100vh]">
                 {/* left */}
                 <div className="w-1/2 flex flex-col max-[500px]:items-center max-[500px]:w-full max-[500px]:pb-16 max-[500px]:pt-[50px]">
                     <h2 className="text-main-dark text-2xl max-[800px]:text-lg">TezeHotel</h2>
-                    <h1 className="text-second-dark font-groce text-7xl max-w-[75%] pt-10 pb-10 cursor-pointer max-[1500px]:text-5xl max-[1200px]:text-4xl max-[800px]:text-2xl max-[800px]:py-5 max-[500px]:text-center">
+                    <h1 className="text-second-dark font-winslowBook text-7xl max-w-[75%] pt-10 pb-10 cursor-pointer max-[1500px]:text-5xl max-[1200px]:text-4xl max-[800px]:text-2xl max-[800px]:py-5 max-[500px]:text-center">
                         Welcome to the oasis of luxury & tranquility
                     </h1>
                     <p className="text-second-gray max-w-[75%] pb-5 max-[800px]:text-sm max-[600px]:text-xs max-[500px]:text-center">

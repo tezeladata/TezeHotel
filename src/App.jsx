@@ -8,7 +8,7 @@ import Rooms from "./pages/Rooms.jsx";
 const App = () => {
     return (
         <Router>
-            <div className="font-groce relative">
+            <div className="font-winslowBook relative">
                 <NavbarMain />
                 <Routes>
                     <Route path="/" element={<Home />} />

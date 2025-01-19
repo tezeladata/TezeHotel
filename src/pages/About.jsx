@@ -19,7 +19,7 @@ const About = () => {
     }, []);
 
     return (
-        <section className="spacer layer2 w-full h-[90vh] px-[15%] flex items-center justify-between max-[1750px]:px-[7.5%] max-[1000px]: max-[1000px]:flex-col-reverse max-[1000px]:justify-start max-[1000px]:pt-[50px] max-[1000px]:h-[100vh] max-[600px]:h-[95vh] max-[400px]:h-[100vh]">
+        <section className="spacer layer2 w-full h-[100vh] px-[15%] flex items-center justify-between max-[1750px]:px-[7.5%] max-[1000px]: max-[1000px]:flex-col-reverse max-[1000px]:justify-start max-[1000px]:pt-[50px] max-[1000px]:h-max">
             {/*  left  */}
             <div className="w-7/12 flex items-center justify-start relative max-[1500px]:w-6/12 max-[1000px]:w-[80%] max-[1000px]:my-10 max-[600px]:my-16 max-[600px]:w-[100%]">
                 <img src={poolImage} alt="pool image" className="w-full h-auto rounded-2xl shadow-[0px_0px_51px_17px_rgba(138,129,64,1)]"/>

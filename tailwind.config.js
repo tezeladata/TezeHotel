@@ -17,6 +17,7 @@ export default {
       fontFamily: {
         nephilm: ['nephilm', 'sans-serif'],
         groce: ['groce', 'sans-serif'],
+        winslowBook: ['winslowBook', 'sans-serif']
       },
     },
   },

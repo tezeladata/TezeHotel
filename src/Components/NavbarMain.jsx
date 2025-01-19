@@ -41,7 +41,7 @@ const NavbarMain = () => {
             </div>
 
             {/* main navbar */}
-            <div className={`relative bg-main-light px-[15%] pt-3 pb-3 flex items-center justify-between max-[1000px]:px-[7.5%] max-[900px]:text-xs max-[900px]:block`}>
+            <div className={`relative bg-main-light px-[15%]  flex items-center justify-between max-[1000px]:px-[7.5%] max-[900px]:text-xs max-[900px]:block`}>
                 {/* Hamburger Menu / Close Icon */}
                 <FontAwesomeIcon 
                     icon={isOpen ? faX : faBars} 
@@ -52,7 +52,7 @@ const NavbarMain = () => {
                 {/* Logo */}
                 <div className="flex items-center justify-start max-[900px]:justify-center">
                     <Link to="/">
-                        <img src={websiteLogo} alt="website logo" className="w-[50%] cursor-pointer max-[900px]:w-[40%] max-[500px]:pb-0"/>
+                        <img src={websiteLogo} alt="website logo" className={`w-[50%] cursor-pointer max-[900px]:w-[40%] max-[500px]:py-3`}/>
                     </Link>
                 </div>
 
@@ -82,7 +82,7 @@ const NavbarMain = () => {
                     <span className="ml-6 cursor-pointer max-[500px]:mx-0 relative group">
                         Analytics <span className="absolute -bottom-1 left-0 w-0 transition-all duration-300 h-0.5 bg-main-gold group-hover:w-full"></span>
                     </span>
-                    <span className="shadow-[0px_0px_11px_5px_rgba(138,129,64,1)] rounded-xl text-main-light ml-6 pt-3 pb-3 pl-6 pr-6 bg-main-gold cursor-pointer hover:font-bold max-[500px]:w-max max-[500px]:[grid-area:4/1/5/3] max-[500px]:justify-self-center max-[500px]:mx-0">Book now</span>
+                    <span className="shadow-[0px_0px_11px_5px_rgba(138,129,64,1)] rounded-xl text-main-light ml-6 my-2 pt-1.5 pb-1.5 pl-3 pr-3 bg-main-gold cursor-pointer hover:font-bold max-[500px]:w-max max-[500px]:[grid-area:4/1/5/3] max-[500px]:justify-self-center max-[500px]:mx-0">Book now</span>
                 </div>
             </div>
         </section>

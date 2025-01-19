@@ -15,15 +15,15 @@ import roomFourThird from "../assets/images/room4/room4-third.jpg";
 
 const Rooms = () => {
     return (
-        <section className="w-full px-[15%]">
+        <section className="w-full px-[15%] spacer layer3 max-[1000px]:px-[7.5%]">
             {/* For headers */}
             <div className="flex flex-col items-center justify-center text-center py-10">
-                <h2 className="text-main-gold text-xl uppercase">Our Rooms</h2>
+                <h2 className="text-main-gold text-xl text-bold uppercase">Our Rooms</h2>
                 <h1 className="text-4xl pt-2 tracking-wider">The most comfortable</h1>
             </div>
 
             {/* For rooms */}
-            <div className="py-5 grid grid-cols-2 gap-5">
+            <div className="py-10 grid grid-cols-2 gap-5 max-[700px]:grid-cols-1">
                 <Room name="Luxury room" baths="2" beds="2" sqft="1200" text="Luxurious rooms featuring elegant design, premium amenities, plush furnishings, and breathtaking views for ultimate comfort." price="$120" image1 = {roomOneFirst} image2 = {roomOneSecond} image3 = {roomOneThird} />
 
                 <Room name="Business room" baths="1" beds="1" sqft="1400" text="Business rooms offer modern design, advanced technology, ergonomic workspaces, and seamless connectivity for productivity." price="$100" image1 = {roomTwoFirst} image2 = {roomTwoSecond} image3 = {roomTwoThird} />
