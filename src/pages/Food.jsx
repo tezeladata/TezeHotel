@@ -28,22 +28,22 @@ const Food = () => {
 
   return (
     <>
-      <section className="layer4 spacer w-screen h-[100vh] px-[15%] py-10 flex items-center justify-between max-[1000px]:px-[7.5%]">
+      <section className="layer4 spacer w-screen px-[15%] py-10 flex items-center justify-between max-[1000px]:px-[7.5%] max-[1000px]:h-[120vh] max-[700px]:h-screen">
         {/*  container  */}
-        <div className="w-full h-full flex items-center gap-12">
-          <div className="w-5/12 relative">
-            <img src={imageMain} alt="main chef image" className="w-full h-auto shadow-[0px_0px_71px_7px_rgba(138,129,64,1)]"/>
-            <img src={imageSecondary} alt="second chef image" className="absolute w-[30%] h-auto left-[-15%] bottom-[-10%] border-8 border-main-gold shadow-[0px_0px_71px_27px_rgba(138,129,64,1)]"/>
+        <div className="w-full flex items-center gap-12 max-[1000px]:flex-col-reverse">
+          <div className="w-5/12 relative max-[1200px]:w-7/12 max-[1000px]:w-full max-[1000px]:py-16 max-[1000px]:flex max-[1000px]:items-center max-[1000px]:justify-center">
+            <img src={imageMain} alt="main chef image" className="w-full h-auto shadow-[0px_0px_71px_7px_rgba(138,129,64,1)] max-[1000px]:w-[50%] max-[500px]:w-[70%]"/>
+            <img src={imageSecondary} alt="second chef image" className="absolute w-[30%] h-auto left-[-15%] bottom-[-10%] border-8 border-main-gold shadow-[0px_0px_71px_27px_rgba(138,129,64,1)] max-[1000px]:hidden"/>
           </div>
 
-          <div className="w-7/12 flex flex-col">
-            <h2 className="text-main-light font-bold uppercase tracking-widest text-xl">
+          <div className="w-7/12 flex flex-col max-[1200px]:w-5/12 max-[1000px]:pt-[100px] max-[1000px]:w-full max-[1000px]:items-center max-[1000px]:justify-center max-[1000px]:text-center max-[700px]:py-0">
+            <h2 className="text-main-light font-bold uppercase tracking-widest text-xl max-[500px]:text-lg">
               Our restaurant
             </h2>
-            <h1 className="py-5 text-7xl max-w-[80%] font-semibold leading-tight">
+            <h1 className="py-5 text-7xl max-w-[80%] font-semibold leading-tight max-[1700px]:text-5xl max-[1200px]:max-w-[100%] max-[1200px]:text-4xl max-[1000px]:text-5xl max-[700px]:text-4xl max-[500px]:text-3xl max-[400px]:text-2xl">
               Enjoy the best food cooked by our professional chefs
             </h1>
-            <p className="py-5 text-lg text-main-gray font-bold max-w-[80%]">
+            <p className="py-5 text-lg text-main-gray font-bold max-w-[80%] max-[1200px]:max-w-[100%] max-[1200px]:text-base max-[1000px]:text-xl max-[1000px]:pb-10 max-[700px]:text-lg max-[500px]:text-base max-[400px]:text-sm">
               Indulge in TezeHotel’s luxury dining, featuring world-class chefs,
               exquisite flavors, and the finest ingredients. Enjoy gourmet
               dishes, artfully presented, paired with exceptional service for an
@@ -51,7 +51,7 @@ const Food = () => {
             </p>
 
             {/* Button to Open Menu Modal */}
-            <button onClick={openMenu} className="uppercase bg-second-gold max-w-max py-4 px-10 font-black text-lg cursor-pointer">See our menu</button>
+            <button onClick={openMenu} className="uppercase bg-second-gold max-w-max py-4 px-10 font-black text-lg cursor-pointer max-[1200px]:text-base">See our menu</button>
           </div>
         </div>
       </section>
@@ -72,10 +72,13 @@ const Food = () => {
             </div>
             {/* Content */}
             <div className="p-4">
-              <h2 className="font-bold text-3xl pb-5">Explore our wide variety of delicious dishes!</h2>
-              <ul>
+              <h2 className="font-bold text-3xl pb-5 max-[800px]:text-xl max-[500px]:text-lg max-[500px]:max-w-[60%] max-[400px]:max-w-[100%] max-[400px]:text-center max-[400px]:text-base">Explore our wide variety of delicious dishes!</h2>
+              <ul className="max-[400px]:grid max-[400px]:grid-cols-2">
                   {menuItems.map(item => (
-                      <li className="text-lg"><span className="font-bold pr-4 text-xl">{item.heading}:</span> {item.text}</li>
+                      <li className="max-[800px]:text-center max-[500px]:text-left max-[400px]:text-center">
+                        <span className="font-bold pr-4 text-xl max-[900px]:text-lg max-[500px]:text-base max-[500px]:font-thin max-[400px]:text-xs">{item.heading}</span>  
+                        <span className="text-lg max-[900px]:text-base max-[800px]:hidden">{item.text}</span>
+                      </li>
                   ))}
               </ul>
             </div>
