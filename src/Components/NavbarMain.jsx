@@ -73,11 +73,14 @@ const NavbarMain = () => {
                             className="absolute -bottom-1 left-0 w-0 transition-all duration-300 h-0.5 bg-main-gold group-hover:w-full"></span>
                         </span>
                     </Link>
+                    <Link to="/food">
+                        <span className="ml-6 cursor-pointer max-[500px]:mx-0 relative group">
+                            Food <span className="absolute -bottom-1 left-0 w-0 transition-all duration-300 h-0.5 bg-main-gold group-hover:w-full"></span>
+                        </span>
+                    </Link>
                     <span className="ml-6 cursor-pointer max-[500px]:mx-0 relative group">
-                        Food <span className="absolute -bottom-1 left-0 w-0 transition-all duration-300 h-0.5 bg-main-gold group-hover:w-full"></span>
-                    </span>
-                    <span className="ml-6 cursor-pointer max-[500px]:mx-0 relative group">
-                        Reviews <span className="absolute -bottom-1 left-0 w-0 transition-all duration-300 h-0.5 bg-main-gold group-hover:w-full"></span>
+                        Reviews <span
+                        className="absolute -bottom-1 left-0 w-0 transition-all duration-300 h-0.5 bg-main-gold group-hover:w-full"></span>
                     </span>
                     <span className="ml-6 cursor-pointer max-[500px]:mx-0 relative group">
                         Analytics <span className="absolute -bottom-1 left-0 w-0 transition-all duration-300 h-0.5 bg-main-gold group-hover:w-full"></span>
