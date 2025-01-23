@@ -11,9 +11,27 @@ import roomThreeThird from "../assets/images/room3/room3-third.jpg";
 import roomFourFirst from "../assets/images/room4/room4-main.jpg";
 import roomFourSecond from "../assets/images/room4/room4-second.jpg";
 import roomFourThird from "../assets/images/room4/room4-third.jpg";
+import { useEffect, useState } from "react";
 
 
 const Rooms = () => {
+    const [isLoading, setIsLoading] = useState(true);
+
+    useEffect(() => {
+        const timer = setTimeout(() => {
+            setIsLoading(false);
+        }, 1000);
+        return () => clearTimeout(timer);
+    }, []);
+
+    if (isLoading) {
+        return (
+            <div className="fixed top-0 left-0 w-full h-full flex items-center justify-center bg-white z-50">
+                <div className="loader"></div>
+            </div>
+        );
+    }
+
     return (
         <section className="w-full px-[15%] spacer layer3 max-[1000px]:px-[7.5%]">
             {/* For headers */}

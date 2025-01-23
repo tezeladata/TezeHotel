@@ -1,22 +1,41 @@
 import React, { useEffect, useState } from "react";
 import poolImage from "../assets/images/pool.jpg"
+import { Link } from 'react-router-dom';
 
 const About = () => {
+    const [isLoading, setIsLoading] = useState(true);
     const [number, setNumber] = useState(1);
 
     useEffect(() => {
-        const interval = setInterval(() => {
-            setNumber(prevNumber => {
-                if (prevNumber < 12) {
-                    return prevNumber + 1;
-                }
-                clearInterval(interval);
-                return prevNumber;
-            });
-        }, 200);
+        const timer = setTimeout(() => {
+            setIsLoading(false);
+        }, 1000);
+        return () => clearTimeout(timer);
+    }, []);
+
+    useEffect(() => {
+        const interval = setTimeout(() => {
+            setInterval(() => {
+                setNumber(prevNumber => {
+                    if (prevNumber < 12) {
+                        return prevNumber + 1;
+                    }
+                    clearInterval(interval);
+                    return prevNumber;
+                });
+            }, 200);
+        }, 1000)
 
         return () => clearInterval(interval);
     }, []);
+
+    if (isLoading) {
+        return (
+            <div className="fixed top-0 left-0 w-full h-full flex items-center justify-center bg-white z-50">
+                <div className="loader"></div>
+            </div>
+        );
+    }
 
     return (
         <section className="spacer layer2 w-full h-[100vh] px-[15%] flex items-center justify-between max-[1750px]:px-[7.5%] max-[1000px]: max-[1000px]:flex-col-reverse max-[1000px]:justify-start max-[1000px]:pt-[50px] max-[1000px]:h-max">
@@ -50,7 +69,11 @@ const About = () => {
                     </div>
                 </div>
 
-                <span className="shadow-[0px_0px_11px_3px_rgba(138,129,64,1)] rounded-xl hover:font-bold text-main-light pt-3 pb-3 pl-6 pr-6 bg-main-gold w-max cursor-pointe max-[600px]:text-sm max-[400px]:py-1 max-[400px]:px-2"> Discover more </span>
+                <span className="cursor-pointer shadow-[0px_0px_11px_3px_rgba(138,129,64,1)] rounded-xl hover:font-bold text-main-light pt-3 pb-3 pl-6 pr-6 bg-main-gold w-max cursor-pointe max-[600px]:text-sm max-[400px]:py-1 max-[400px]:px-2"> 
+                    <Link to="/rooms">
+                        Discover more 
+                    </Link>
+                </span>
             </div>
         </section>
     );

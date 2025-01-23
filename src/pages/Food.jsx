@@ -1,9 +1,10 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import imageMain from "../assets/images/chef-second.jpg";
 import imageSecondary from "../assets/images/chef-main.jpg";
 
 const Food = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
 
   const openMenu = () => setIsMenuOpen(true);
   const closeMenu = () => setIsMenuOpen(false);
@@ -25,6 +26,21 @@ const Food = () => {
       { heading: "Seafood Paella", text: "A luxurious take with saffron rice, lobster, shrimp, and mussels." },
       { heading: "Chocolate Fondant", text: "Warm chocolate cake with a gooey center, served with vanilla bean ice cream." }
   ];
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+    }, 1000);
+    return () => clearTimeout(timer);
+  }, []);
+  
+  if (isLoading) {
+    return (
+      <div className="fixed top-0 left-0 w-full h-full flex items-center justify-center bg-white z-50">
+        <div className="loader"></div>
+      </div>
+    );
+  }
 
   return (
     <>

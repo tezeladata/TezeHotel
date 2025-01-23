@@ -5,6 +5,7 @@ import image2 from "../assets/images/room-main.jpg";
 import image3 from "../assets/images/room-second.jpg";
 import image4 from "../assets/images/balcony-main.jpg";
 import image5 from "../assets/images/balcony-second.jpg";
+import { Link } from 'react-router-dom';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
@@ -61,6 +62,8 @@ const Home = () => {
         return () => observer.disconnect();
     }, []);
 
+    
+
     return (
         <header className="flex flex-col spacer layer1">
             {/* container */}
@@ -75,8 +78,11 @@ const Home = () => {
                         Welcome to TezeHotel, a sanctuary of elegance and opulence nestled in the heart of Batumi. Experience unparalleled luxury with our exquisitely designed suites, world-class dining, and personalized service.
                     </p>
                     <span className="cursor-pointer shadow-[0px_0px_11px_5px_rgba(138,129,64,1)] rounded-xl hover:font-bold text-main-light pt-3 pb-3 pl-6 pr-6 bg-main-gold w-max cursor-pointe max-[600px]:text-sm">
-                        Discover more
+                        <Link to="/about">
+                            Discover more
+                        </Link>
                     </span>
+                   
                 </div>
 
                 {/* right */}
