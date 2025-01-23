@@ -28,7 +28,7 @@ const Food = () => {
 
   return (
     <>
-      <section className="layer4 spacer w-screen px-[15%] py-10 flex items-center justify-between max-[1000px]:px-[7.5%] max-[1000px]:h-[120vh] max-[700px]:h-screen">
+      <section className="layer4 spacer w-screen px-[15%] py-10 flex items-center justify-between max-[1000px]:px-[7.5%] max-[1000px]:h-[130vh]">
         {/*  container  */}
         <div className="w-full flex items-center gap-12 max-[1000px]:flex-col-reverse">
           <div className="w-5/12 relative max-[1200px]:w-7/12 max-[1000px]:w-full max-[1000px]:py-16 max-[1000px]:flex max-[1000px]:items-center max-[1000px]:justify-center">

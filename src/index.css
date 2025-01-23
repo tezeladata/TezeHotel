@@ -61,3 +61,7 @@
     background-image: url("./assets/images/backgrounds/stacked-waves-haikei.svg");
     min-height: 100vh;
 }
+
+.layer5 {
+    background-image: url("./assets/images/backgrounds/reviews-background.svg");
+}
