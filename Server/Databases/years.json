@@ -1,0 +1,86 @@
+[
+    {
+      "Year": 2005,
+      "Number of guests": 3000
+    },
+    {
+        "Year": 2006,
+        "Number of guests": 5000
+    },
+    {
+        "Year": 2007,
+        "Number of guests": 7000
+    },
+    {
+        "Year": 2008,
+        "Number of guests": 5000
+    },
+    {
+        "Year": 2009,
+        "Number of guests": 5500
+    },
+    {
+        "Year": 2010,
+        "Number of guests": 7500
+    },
+    {
+        "Year": 2011,
+        "Number of guests": 8000
+    },
+    {
+        "Year": 2012,
+        "Number of guests": 10000
+    },
+    {
+        "Year": 2013,
+        "Number of guests": 10000
+    },
+    {
+        "Year": 2014,
+        "Number of guests": 14000
+    },
+    {
+        "Year": 2015,
+        "Number of guests": 17000
+    },
+    {
+        "Year": 2016,
+        "Number of guests": 18000
+    },
+    {
+        "Year": 2017,
+        "Number of guests": 18000
+    },
+    {
+        "Year": 2018,
+        "Number of guests": 20000
+    },
+    {
+        "Year": 2019,
+        "Number of guests": 8000
+    },
+    {
+        "Year": 2020,
+        "Number of guests": 8500
+    },
+    {
+        "Year": 2021,
+        "Number of guests": 9000
+    },
+    {
+        "Year": 2022,
+        "Number of guests": 20000
+    },
+    {
+        "Year": 2023,
+        "Number of guests": 22000
+    },
+    {
+        "Year": 2024,
+        "Number of guests": 28400
+    },
+    {
+        "Year": 2025,
+        "Number of guests": 5000
+    }
+]

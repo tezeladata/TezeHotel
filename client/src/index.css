@@ -66,9 +66,13 @@
     background-image: url("./assets/images/backgrounds/reviews-background.svg");
 }
 
+.layer6 {
+    background-image: url("./assets/images/backgrounds/analytics-bg.svg");
+}
+
 .loader {
   border: 6px solid #f3f3f3;
-  border-top: 6px solid #8a8140; /* Gold color */
+  border-top: 6px solid #8a8140; 
   border-radius: 50%;
   width: 50px;
   height: 50px;

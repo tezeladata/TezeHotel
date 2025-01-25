@@ -1,0 +1,50 @@
+[
+    {
+      "Month": "January",
+      "Number of guests": 3000
+    },
+    {
+      "Month": "February",
+      "Number of guests": 700
+    },
+    {
+      "Month": "March",
+      "Number of guests": 1000
+    },
+    {
+      "Month": "April",
+      "Number of guests": 800
+    },
+    {
+      "Month": "May",
+      "Number of guests": 1300
+    },
+    {
+      "Month": "June",
+      "Number of guests": 2500
+    },
+    {
+      "Month": "July",
+      "Number of guests": 3500
+    },
+    {
+      "Month": "August",
+      "Number of guests": 5000
+    },
+    {
+      "Month": "September",
+      "Number of guests": 4800
+    },
+    {
+      "Month": "October",
+      "Number of guests": 2000
+    },
+    {
+      "Month": "November",
+      "Number of guests": 300
+    },
+    {
+      "Month": "December",
+      "Number of guests": 3500
+    }
+]
