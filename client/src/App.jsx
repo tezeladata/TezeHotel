@@ -7,6 +7,7 @@ import Rooms from "./pages/Rooms.jsx";
 import Food from "./pages/Food.jsx";
 import Reviews from "./pages/Reviews.jsx";
 import Analytics from "./pages/Analytics.jsx";
+import Register from "./pages/Register.jsx";
 
 const App = () => {
     return (
@@ -19,6 +20,7 @@ const App = () => {
                 <Route path="/food" element={<Food />} />
                 <Route path="/reviews" element={<Reviews />} />
                 <Route path="/analytics" element={<Analytics />} />
+                <Route path="/register" element={<Register />} />
             </Routes>
         </div>
     );
