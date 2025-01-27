@@ -71,7 +71,11 @@
 }
 
 .layer7 {
-    background-image: url("./assets//images/backgrounds/register-background.svg");
+    background-image: url("./assets/images/backgrounds/register-background.svg");
+}
+
+.layer8 {
+    background-image: url("./assets/images/backgrounds/booking-background.svg");
 }
 
 .loader {

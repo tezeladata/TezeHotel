@@ -8,6 +8,8 @@ import Food from "./pages/Food.jsx";
 import Reviews from "./pages/Reviews.jsx";
 import Analytics from "./pages/Analytics.jsx";
 import Register from "./pages/Register.jsx";
+import Login from "./pages/Login.jsx";
+import BookNow from "./pages/BookNow.jsx";
 
 const App = () => {
     return (
@@ -21,6 +23,8 @@ const App = () => {
                 <Route path="/reviews" element={<Reviews />} />
                 <Route path="/analytics" element={<Analytics />} />
                 <Route path="/register" element={<Register />} />
+                <Route path="/login" element={<Login />} />
+                <Route path="/bookNow" element={<BookNow />} />
             </Routes>
         </div>
     );

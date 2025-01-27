@@ -1,25 +1,51 @@
-import React, { useState, useEffect } from "react";
+import React, {useState, useEffect, useContext} from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPhone, faEnvelopeOpenText, faBars, faX } from '@fortawesome/free-solid-svg-icons';
 import { faFacebookF, faInstagram, faYoutube } from '@fortawesome/free-brands-svg-icons';
 import websiteLogo from "../assets/images/logo.png";
 import { Link } from 'react-router-dom';
+import {AdminContext} from "../context/AdminContext.jsx";
 
 const NavbarMain = () => {
-    const [isOpen, setIsOpen] = useState(true);
+    const [isOpen, setIsOpen] = useState(false);
+    const [loggedIn, setLoggedIn] = useState(false);
+    const [admin, setAdmin] = useState(false);
     const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+    const { isLoggedIn } = useContext(AdminContext);
 
+    // Handle window resize
     useEffect(() => {
         const handleResize = () => setWindowWidth(window.innerWidth);
-        window.addEventListener('resize', handleResize);
+        window.addEventListener("resize", handleResize);
 
-        return () => {
-            window.removeEventListener('resize', handleResize);
+        // Fetch user login status
+        const fetchUserInfo = async () => {
+            try {
+                const res = await fetch("http://localhost:3000/login/getInfo");
+
+                if (res.ok) {
+                    const data = await res.json();
+                    setLoggedIn(data.isLoggedIn);
+                    setAdmin(data.isAdmin);
+                } else {
+                    const errorData = await res.json();
+                    console.error(errorData.message);
+                }
+            } catch (err) {
+                console.error("Error fetching user info:", err);
+            } finally {
+                console.log(admin);
+                console.log(loggedIn);
+            }
         };
-    }, []);
 
-    const handleChange = () => {
-        setIsOpen(!isOpen);
+        fetchUserInfo();
+
+        return () => window.removeEventListener("resize", handleResize);
+      }, [isLoggedIn]);
+
+    const handleChange  = () => {
+        setIsOpen((prev) => !prev);
     };
 
     return (
@@ -89,11 +115,17 @@ const NavbarMain = () => {
                             className="absolute -bottom-1 left-0 w-0 transition-all duration-300 h-0.5 bg-main-gold group-hover:w-full"></span>
                         </span>
                     </Link>
-                    <span className="shadow-[0px_0px_11px_5px_rgba(138,129,64,1)] rounded-xl text-main-light ml-6 my-2 pt-1.5 pb-1.5 pl-3 pr-3 bg-main-gold cursor-pointer hover:font-bold max-[500px]:w-max max-[500px]:[grid-area:4/1/5/3] max-[500px]:justify-self-center max-[500px]:mx-0">
-                        <Link to="/register">
-                            Register
-                        </Link>
-                    </span>
+                    {loggedIn === false && (
+                        <span className="shadow-[0px_0px_11px_5px_rgba(138,129,64,1)] rounded-xl text-main-light ml-6 my-2 pt-1.5 pb-1.5 pl-3 pr-3 bg-main-gold cursor-pointer hover:font-bold max-[500px]:w-max max-[500px]:[grid-area:4/1/5/3] max-[500px]:justify-self-center max-[500px]:mx-0">
+                            <Link to="/register">Register</Link>
+                        </span>
+                    )}
+                    {(loggedIn === true && admin === false) && (
+                        <span
+                            className="shadow-[0px_0px_11px_5px_rgba(138,129,64,1)] rounded-xl text-main-light ml-6 my-2 pt-1.5 pb-1.5 pl-3 pr-3 bg-main-gold cursor-pointer hover:font-bold max-[500px]:w-max max-[500px]:[grid-area:4/1/5/3] max-[500px]:justify-self-center max-[500px]:mx-0">
+                            <Link to="/bookNow">Book now</Link>
+                        </span>
+                    )}
                 </div>
             </div>
         </section>

@@ -68,23 +68,23 @@ const Analytics = () => {
     return (
         <section className="layer6 spacer w-screen flex flex-col items-center justify-center px-[15%] py-10 max-[1000px]:px-[7.5%]">
             {/* Charts container */}
-            <div className="w-full flex justify-between items-center text-main-light">
+            <div className="w-full flex justify-between items-center text-main-light max-[1000px]:flex-col">
                 {/* Bar chart */}
-                <div className="w-5/12 flex flex-col items-center justify-center">
-                    <h2 className="py-10 text-3xl">Number of guests in each month</h2>
+                <div className="w-5/12 flex flex-col items-center justify-center max-[1000px]:w-[100%] max-[1000px]:py-10">
+                    <h2 className="py-10 text-2xl max-[500px]:text-xl">Number of guests in each month</h2>
                     {barData !== null ? <BarChart {...BarConfig} className="w-[100%] bg-main-dark text-main-dark px-10 py-5 rounded-lg" /> : <p>Data not loaded</p>}
                 </div>
 
                 {/* Pie chart */}
-                <div className="w-5/12 flex flex-col items-center justify-center">
-                    <h2 className="py-10 text-3xl">Guest nationality in percentage</h2>
+                <div className="w-5/12 flex flex-col items-center justify-center max-[1000px]:w-[100%] max-[1000px]:py-10">
+                    <h2 className="py-10 text-2xl max-[500px]:text-xl">Guest nationality in percentage</h2>
                     {pieData !== null ? <PieChart {...pieConfig} className="w-[100%] bg-main-dark text-main-dark px-10 py-5 rounded-lg" /> : <p>Data not loaded</p>}
                 </div>
             </div>
 
             {/* line chart div */}
-            <div className="w-full py-20 flex flex-col items-center justify-center text-main-light">
-                <h2 className="py-10 text-3xl">Number of guests in each year</h2>
+            <div className="w-full py-20 flex flex-col items-center justify-center text-main-light max-[1000px]:py-10">
+                <h2 className="py-10 text-2xl max-[500px]:text-xl">Number of guests in each year</h2>
                 {lineData !== null ? <LineChart {...LineConfig} className="w-[100%] bg-main-dark text-main-dark px-10 py-10 rounded-lg" /> : <p>Data not loaded</p>}
             </div>
         </section>

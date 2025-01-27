@@ -10,7 +10,7 @@ const filePath = path.resolve(__dirname, "../Databases/all-users.json");
 export const registerRouter = express.Router();
 
 registerRouter.post("/register", async (req, res) => {
-    const { fullname, age, email, password } = req.body;
+    let { fullname, age, email, password, isAdmin } = req.body;
 
     try {
         const data = await fs.readFile(filePath, "utf8");
@@ -22,7 +22,8 @@ registerRouter.post("/register", async (req, res) => {
         }
 
         // Add new user
-        users.push({ fullname, age, email, password });
+        isAdmin === "yes" || isAdmin === "Yes" || isAdmin === "YES" ? isAdmin = true : isAdmin = false;
+        users.push({ fullname, age, email, password, isAdmin });
 
         // Save updated users list
         await fs.writeFile(filePath, JSON.stringify(users, null, 2));
