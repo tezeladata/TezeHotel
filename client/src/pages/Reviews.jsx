@@ -69,7 +69,7 @@ const Reviews = () => {
             <div className="flex w-full py-10">
                 <Swiper spaceBetween={20} slidesPerView={windowWidth >= 1000 ? 2 : 1} pagination={{ clickable: true }} loop={true} modules={[Navigation, Pagination]} className="mySwiper h-full">
                     {customers.map((customer) => (
-                        <SwiperSlide key={customer.name} className="p-10 bg-second-gray">
+                        <SwiperSlide key={customer.name} className="p-10 bg-third-gray">
                             <div className="pb-5">
                                 <FontAwesomeIcon icon={faStar} className="cursor-pointer pr-4 text-main-gold text-lg" />
                                 <FontAwesomeIcon icon={faStar} className="cursor-pointer pr-4 text-main-gold text-lg" />

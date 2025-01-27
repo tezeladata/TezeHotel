@@ -12,6 +12,7 @@ export default {
         "second-gold": "var(--text-gold-second)",
         "main-gray": "var(--text-gray)",
         "second-gray": "var(--text-gray2)",
+        "third-gray": "var(--text-gray3)",
         "main-light": "var(--text-light)"
       },
       fontFamily: {

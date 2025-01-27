@@ -93,7 +93,7 @@ const Register = () => {
             <div
                 className="w-1/2 flex items-center justify-end max-[1000px]:w-screen max-[1000px]:items-center max-[1000px]:justify-center max-[1000px]:py-10">
                 <img src={roomImage} alt="room image"
-                     className="object-cover w-[80%] h-[700px] rounded-3xl shadow-[0px_0px_71px_27px_rgba(138,129,64,1)] max-[1700px]:h-[500px] max-[1000px]:w-[60%] max-[600px]:w-[80%] max-[400px]:h-[400px]"/>
+                     className="object-cover w-[80%] h-[700px] rounded-3xl shadow-[0px_0px_71px_27px_rgba(138,129,64,1)] max-[1700px]:h-[500px] max-[1000px]:w-[60%] max-[600px]:w-[80%] max-[400px]:h-[400px] cursor-pointer"/>
             </div>
         </section>
     );
