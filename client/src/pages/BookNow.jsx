@@ -1,5 +1,6 @@
-import React, { useState, useEffect } from 'react';
+import React, {useState, useEffect, useContext} from 'react';
 import {useNavigate} from "react-router-dom";
+import {AdminContext} from "../context/AdminContext.jsx";
 
 const BookNow = () => {
     const [bookings, setBookings] = useState([]);
@@ -7,6 +8,7 @@ const BookNow = () => {
     const [editBooking, setEditBooking] = useState(null);
     const [error, setError] = useState(null);
     const [userEmail, setUserEmail] = useState(null);
+    const { setIsLoggedIn } = useContext(AdminContext);
     const navigate = useNavigate();
 
     useEffect(() => {
@@ -118,14 +120,15 @@ const BookNow = () => {
     };
 
     const handleLogOut = async () => {
-    const response = await fetch(`http://localhost:3000/${userEmail}/bookings/logout`);
+        const response = await fetch(`http://localhost:3000/${userEmail}/bookings/logout`);
 
-    if (response.ok) {
-        navigate("/");
-    } else {
-        setError('Failed to log out. Please try again.');
-    }
-};
+        if (response.ok) {
+            setIsLoggedIn(false);
+            navigate("/");
+        } else {
+            setError('Failed to log out. Please try again.');
+        }
+    };
 
     return (
         <section className="bg-main-gold w-full min-h-[95vh] px-[15%] py-10 flex items-center justify-between gap-12 max-[1000px]:px-[7.5%] max-[1000px]:flex-col">
