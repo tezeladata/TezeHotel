@@ -126,6 +126,12 @@ const NavbarMain = () => {
                             <Link to="/bookNow">Book now</Link>
                         </span>
                     )}
+                    {(loggedIn === true && admin === true) && (
+                        <span
+                            className="shadow-[0px_0px_11px_5px_rgba(138,129,64,1)] rounded-xl text-main-light ml-6 my-2 pt-1.5 pb-1.5 pl-3 pr-3 bg-main-gold cursor-pointer hover:font-bold max-[500px]:w-max max-[500px]:[grid-area:4/1/5/3] max-[500px]:justify-self-center max-[500px]:mx-0">
+                            <Link to="/reservations">Admin panel</Link>
+                        </span>
+                    )}
                 </div>
             </div>
         </section>

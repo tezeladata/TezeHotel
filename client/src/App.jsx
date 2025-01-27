@@ -10,6 +10,7 @@ import Analytics from "./pages/Analytics.jsx";
 import Register from "./pages/Register.jsx";
 import Login from "./pages/Login.jsx";
 import BookNow from "./pages/BookNow.jsx";
+import Reservations from "./pages/Reservations.jsx";
 
 const App = () => {
     return (
@@ -25,6 +26,7 @@ const App = () => {
                 <Route path="/register" element={<Register />} />
                 <Route path="/login" element={<Login />} />
                 <Route path="/bookNow" element={<BookNow />} />
+                <Route path="/reservations" element={<Reservations />} />
             </Routes>
         </div>
     );
