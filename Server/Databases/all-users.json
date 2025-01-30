@@ -1,1 +1,27 @@
-[]
+[
+  {
+    "fullname": "David Tezelashvili",
+    "age": "20",
+    "email": "datatezelashvili8@gmail.com",
+    "password": "123123123",
+    "isAdmin": false,
+    "isLoggedIn": false,
+    "bookings": [
+      {
+        "id": 1,
+        "room": "business",
+        "view": "Mountain view",
+        "startDate": "2025-01-15",
+        "endDate": "2025-01-31"
+      }
+    ]
+  },
+  {
+    "fullname": "David Tezelashvili",
+    "age": "20",
+    "email": "david.tezelashvili@gmail.com",
+    "password": "123123123",
+    "isAdmin": true,
+    "isLoggedIn": true
+  }
+]
