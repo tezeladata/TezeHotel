@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="96d0c1eb-d0bc-4b22-ae53-d6e9c121058f" name="Changes" comment="FINAL!!!" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="JSX File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;tezeladata&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/tezeladata/TezeHotel.git&quot;,
+    &quot;accountId&quot;: &quot;30e45df0-ef73-42d8-957e-18026a47adb2&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 2
+}</component>
+  <component name="ProjectId" id="2sCjAnhgBS6OX8kGiDm912cmGWw" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\PyCharm 2024.2.0.1\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\PC\OneDrive\Desktop\TezeHotel\client\src\assets\images\backgrounds" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-7c0b70fcd90d-JavaScript-PY-242.21829.153" />
+        <option value="bundled-python-sdk-464836ebc622-b74155a9e76b-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-242.21829.153" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="96d0c1eb-d0bc-4b22-ae53-d6e9c121058f" name="Changes" comment="" />
+      <created>1737966310633</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1737966310633</updated>
+      <workItem from="1737966312309" duration="2106000" />
+      <workItem from="1737968729782" duration="3460000" />
+      <workItem from="1737972305331" duration="8676000" />
+      <workItem from="1737998781777" duration="375000" />
+      <workItem from="1737999443422" duration="4283000" />
+      <workItem from="1738003838879" duration="33000" />
+      <workItem from="1738419246604" duration="154000" />
+      <workItem from="1738419408059" duration="311000" />
+      <workItem from="1738686215499" duration="74000" />
+      <workItem from="1738686792056" duration="1000" />
+      <workItem from="1738779596423" duration="1664000" />
+    </task>
+    <task id="LOCAL-00001" summary="Added responsive for register and login pages. added routes for login and book now page. added booknow page with full responsive and functionality.">
+      <option name="closed" value="true" />
+      <created>1737981300683</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1737981300683</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Fixed navbar bug when user is logging out.">
+      <option name="closed" value="true" />
+      <created>1737999149735</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1737999149735</updated>
+    </task>
+    <task id="LOCAL-00003" summary="full functionality and responsive is ready. Little changes will be made in following version">
+      <option name="closed" value="true" />
+      <created>1738003865853</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1738003865853</updated>
+    </task>
+    <task id="LOCAL-00004" summary="FINAL!!!">
+      <option name="closed" value="true" />
+      <created>1738781214572</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1738781214572</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Added responsive for register and login pages. added routes for login and book now page. added booknow page with full responsive and functionality." />
+    <MESSAGE value="Fixed navbar bug when user is logging out." />
+    <MESSAGE value="full functionality and responsive is ready. Little changes will be made in following version" />
+    <MESSAGE value="FINAL!!!" />
+    <option name="LAST_COMMIT_MESSAGE" value="FINAL!!!" />
+  </component>
+</project>
