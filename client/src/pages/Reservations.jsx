@@ -52,6 +52,7 @@ const Reservations = () => {
             if (response.ok) {
                 setIsLoggedIn(false);
                 navigate("/");
+                window.location.reload();
             } else {
                 setError("Failed to log out. Please try again.");
             }
