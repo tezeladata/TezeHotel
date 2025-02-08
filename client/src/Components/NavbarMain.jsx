@@ -21,7 +21,7 @@ const NavbarMain = () => {
         // Fetch user login status
         const fetchUserInfo = async () => {
             try {
-                const res = await fetch("http://localhost:3000/login/getInfo");
+                const res = await fetch("https://tezehotel-backend.onrender.com/login/getInfo");
 
                 if (res.ok) {
                     const data = await res.json();

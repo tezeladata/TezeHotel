@@ -49,6 +49,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -90,6 +91,7 @@
       <workItem from="1738686215499" duration="74000" />
       <workItem from="1738686792056" duration="1000" />
       <workItem from="1738779596423" duration="1664000" />
+      <workItem from="1738781292433" duration="66000" />
     </task>
     <task id="LOCAL-00001" summary="Added responsive for register and login pages. added routes for login and book now page. added booknow page with full responsive and functionality.">
       <option name="closed" value="true" />
@@ -123,7 +125,15 @@
       <option name="project" value="LOCAL" />
       <updated>1738781214572</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="FINAL!!!">
+      <option name="closed" value="true" />
+      <created>1738781311294</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1738781311295</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

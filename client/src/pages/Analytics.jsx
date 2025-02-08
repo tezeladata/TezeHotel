@@ -50,9 +50,9 @@ const Analytics = () => {
             setIsLoading(false);
         }, 1000);
 
-        getChartInfo("http://localhost:3000/analytics/pie", setPieData); 
-        getChartInfo("http://localhost:3000/analytics/bar", setBarData); 
-        getChartInfo("http://localhost:3000/analytics/line", setLineData); 
+        getChartInfo("https://tezehotel-backend.onrender.com/analytics/pie", setPieData);
+        getChartInfo("https://tezehotel-backend.onrender.com/analytics/bar", setBarData);
+        getChartInfo("https://tezehotel-backend.onrender.com/analytics/line", setLineData);
 
         return () => clearTimeout(timer); 
     }, []);

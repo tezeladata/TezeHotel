@@ -14,7 +14,7 @@ const BookNow = () => {
     useEffect(() => {
         const fetchUserEmail = async () => {
             try {
-                const response = await fetch('http://localhost:3000/login/getInfo');
+                const response = await fetch('https://tezehotel-backend.onrender.com/login/getInfo');
                 const data = await response.json();
 
                 console.log(data);
@@ -37,7 +37,7 @@ const BookNow = () => {
         if (userEmail) {
             const fetchBookings = async () => {
                 try {
-                    const response = await fetch(`http://localhost:3000/${userEmail}/bookings`);
+                    const response = await fetch(`https://tezehotel-backend.onrender.com/${userEmail}/bookings`);
                     const data = await response.json();
                     if (response.ok) {
                         setBookings(data); // Set bookings data
@@ -67,7 +67,7 @@ const BookNow = () => {
         };
 
         if (editBooking) {
-            const response = await fetch(`http://localhost:3000/${userEmail}/bookings/${editBooking.id}`, {
+            const response = await fetch(`https://tezehotel-backend.onrender.com/${userEmail}/bookings/${editBooking.id}`, {
                 method: 'PUT',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(bookingData),
@@ -83,7 +83,7 @@ const BookNow = () => {
                 setError(updatedBooking.message);
             }
         } else {
-            const response = await fetch(`http://localhost:3000/${userEmail}/bookings`, {
+            const response = await fetch(`https://tezehotel-backend.onrender.com/${userEmail}/bookings`, {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(bookingData),
@@ -107,7 +107,7 @@ const BookNow = () => {
     };
 
     const handleDelete = async (id) => {
-        const response = await fetch(`http://localhost:3000/${userEmail}/bookings/${id}`, {
+        const response = await fetch(`https://tezehotel-backend.onrender.com/${userEmail}/bookings/${id}`, {
             method: 'DELETE',
         });
 
@@ -120,7 +120,7 @@ const BookNow = () => {
     };
 
     const handleLogOut = async () => {
-        const response = await fetch(`http://localhost:3000/${userEmail}/bookings/logout`);
+        const response = await fetch(`https://tezehotel-backend.onrender.com/${userEmail}/bookings/logout`);
 
         if (response.ok) {
             setIsLoggedIn(false);

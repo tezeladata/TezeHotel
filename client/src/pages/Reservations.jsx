@@ -13,7 +13,7 @@ const Reservations = () => {
     useEffect(() => {
         const fetchUserEmail = async () => {
             try {
-                const response = await fetch("http://localhost:3000/login/getInfo");
+                const response = await fetch("https://tezehotel-backend.onrender.com/login/getInfo");
                 const data = await response.json();
 
                 if (response.ok && data.email) {
@@ -30,7 +30,7 @@ const Reservations = () => {
 
         const getReservations = async () => {
             try {
-                const res = await fetch("http://localhost:3000/reservations/");
+                const res = await fetch("https://tezehotel-backend.onrender.com/reservations/");
                 const json = await res.json();
                 setAllInfo(json);
             } catch (error) {
@@ -47,7 +47,7 @@ const Reservations = () => {
 
     const handleLogOut = async () => {
         try {
-            const response = await fetch(`http://localhost:3000/${userEmail}/reservations/logout`);
+            const response = await fetch(`https://tezehotel-backend.onrender.com/${userEmail}/reservations/logout`);
 
             if (response.ok) {
                 setIsLoggedIn(false);
