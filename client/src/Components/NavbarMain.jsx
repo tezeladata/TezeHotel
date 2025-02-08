@@ -77,9 +77,9 @@ const NavbarMain = () => {
 
                 {/* Logo */}
                 <div className="flex items-center justify-start max-[900px]:justify-center">
-                    <Link to="/">
+
                         <img src={websiteLogo} alt="website logo" className={`w-[50%] cursor-pointer max-[900px]:w-[40%] max-[500px]:py-3`}/>
-                    </Link>
+
                 </div>
 
                 {/* Menu Items */}

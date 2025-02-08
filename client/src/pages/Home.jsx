@@ -22,11 +22,9 @@ const Home = () => {
 
     useEffect(() => {
         const createInterval = (setter, max, delay) => {
-            const interval = setInterval(() => {
+            let interval = setInterval(() => {
                 setter(prevNumber => {
-                    if (prevNumber < max) {
-                        return prevNumber + 1;
-                    }
+                    if (prevNumber < max) return prevNumber + 1;
                     clearInterval(interval);
                     return prevNumber;
                 });
@@ -35,14 +33,10 @@ const Home = () => {
         };
 
         const startCounting = () => {
-            const intervals = [
-                createInterval(setYears, 12, 200),
-                createInterval(setRooms, 105, 20),
-                createInterval(setCustomers, 34, 100),
-                createInterval(setStaff, 485, 5)
-            ];
-
-            return () => intervals.forEach(clearInterval);
+            createInterval(setYears, 12, 200);
+            createInterval(setRooms, 105, 20);
+            createInterval(setCustomers, 34, 100);
+            createInterval(setStaff, 485, 5);
         };
 
         const observer = new IntersectionObserver(
@@ -52,14 +46,14 @@ const Home = () => {
                     observer.disconnect();
                 }
             },
-            { threshold: 0.5 }
+            { threshold: 0.5, rootMargin: "10px" }
         );
 
-        if (statsRef.current) {
-            observer.observe(statsRef.current);
-        }
+        if (statsRef.current) observer.observe(statsRef.current);
 
-        return () => observer.disconnect();
+        return () => {
+            observer.disconnect();
+        };
     }, []);
 
     

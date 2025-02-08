@@ -50,7 +50,7 @@ const Register = () => {
     };
 
     return (
-        <section className="layer7 spacer w-screen min-h-[95vh] flex items-center justify-between px-[15%] py-10 max-[1000px]:px-[7.5%] max-[1000px]:flex-col max-[1000px]:min-h-[135vh] max-[400px]:min-h-[170vh]">
+        <section className="layer7 spacer w-screen min-h-[95vh] flex items-center justify-between px-[15%] py-10 max-[1000px]:px-[7.5%] max-[1000px]:flex-col max-[1000px]:min-h-[135vh] max-[500px]:min-h-[190vh]">
             {/* form container */}
             <div className="w-1/2 flex flex-col items-stars justify-center max-[1000px]:w-screen max-[1000px]:items-center max-[1000px]:py-10">
                 <h1 className="pb-10 text-6xl max-[600px]:text-4xl">Register / <span onClick={() => navigate("/login")} className="cursor-pointer">to LOGIN</span></h1>
